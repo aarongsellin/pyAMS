@@ -1,4 +1,4 @@
-# pyAccountManagementSystem
+# pyAMS
 pyAccountManagementSystem is a userfriendly library for adding a very simple and easy to use login system to any application. It uses ![MongoDB](https://www.mongodb.com/) as It's database.
 
 ## Installing
