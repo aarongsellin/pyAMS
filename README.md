@@ -25,6 +25,20 @@ _Create Ex_:
 1
 ```
 
+_Client Login Ex_:
+```
+>>> import socket
+>>> 
+>>> loginStr = {"login":{"tester","password"}}
+>>> s = socket.socket()
+>>> 
+>>> s.connect((10.10.10.10,8500))
+>>> s.send(bytes(loginStr,encoding="ASCII"))
+>>> print(str(s.recv(1024),encoding="ASCII"))
+You logged in as tester.
+>>> s.close()
+```
+
 ## Documentation
 The entire system is centered around the _manager_ object. 
 
@@ -38,7 +52,7 @@ The entire system is centered around the _manager_ object.
 
 ```ManagerClass.set(username,data)``` - Replace account data with other data.
 
-```ManagerClass.listen(port)``` - Listen on a port for clients to connect. (This should **NOT** be used in live projects)
+```ManagerClass.listen(port)``` - Listen on a and handle client logins. (This should **not** be used in live projects, only for testing)
 
 ## Contributing
 I would be more than happy to accpet contributions. These can come in the form of bug reports, feature requests and pure code!
