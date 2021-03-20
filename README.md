@@ -72,4 +72,4 @@ The entire system is centered around the _manager_ object.
 I would be more than happy to accpet contributions. These can come in the form of bug reports, feature requests and pure code!
 
 ## Maintainers
-* @mrikea4real (Aaron Gotthardsson)
+* ![@mrikea4real](https://github.com/mrikea4real) (Aaron Gotthardsson)
