@@ -29,13 +29,27 @@ _Client Login Ex_:
 ```
 >>> import socket
 >>> 
->>> loginStr = {"login":{"tester","password"}}
+>>> loginStr = {"login":{"username":"tester","password":"password"}}
 >>> s = socket.socket()
 >>> 
 >>> s.connect((10.10.10.10,8500))
 >>> s.send(bytes(loginStr,encoding="ASCII"))
 >>> print(str(s.recv(1024),encoding="ASCII"))
-You logged in as tester.
+Logged in.
+>>> s.close()
+```
+
+_Client Create Ex_:
+```
+>>> import socket
+>>> 
+>>> createStr = {"create":{"username":"tester","password":"password","data":{"name":"John Doe"}}}
+>>> s = socket.socket()
+>>> 
+>>> s.connect((10.10.10.10,8500))
+>>> s.send(bytes(createStr,encoding="ASCII"))
+>>> print(str(s.recv(1024),encoding="ASCII"))
+Account created.
 >>> s.close()
 ```
 
