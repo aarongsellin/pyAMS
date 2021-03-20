@@ -28,17 +28,17 @@ _Create Ex_:
 ## Documentation
 The entire system is centered around the _manager_ object. 
 
-```ManagerSetup(Connection string)``` - Creates the account manager, needs the mongodb connection string.
+```ManagerSetup(Connection string)``` - Returns the account manager, needs the mongodb connection string.
 
 ```ManagerClass.login(username,password)``` - Login to an account with username and password.
 
 ```ManagerClass.create(username,password,data={})``` - Create an account with username and password, _optionally_ passing along a data json string.
 
-```ManagerClass.get(username)``` - Get data json string from a player.
+```ManagerClass.get(username)``` - Returns account data in json string format.
 
 ```ManagerClass.set(username,data)``` - Replace account data with other data.
 
-```ManagerClass.listen(port)``` - Listen on a port for clients to connect. (This should only be used for testing and not in live projects due to It being extremely insecure.
+```ManagerClass.listen(port)``` - Listen on a port for clients to connect. (This should **NOT** be used in live projects)
 
 ## Contributing
 I would be more than happy to accpet contributions. These can come in the form of bug reports, feature requests and pure code!
