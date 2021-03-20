@@ -1,12 +1,12 @@
 # pyAMS
-pyAccountManagementSystem is a userfriendly library for adding a very simple and easy to use login system to any application. It uses ![MongoDB](https://www.mongodb.com/) as It's database.
+pyAMS stands for _Account management system_ and is a userfriendly library for adding a very simple and easy to use login system to any application. It uses ![MongoDB](https://www.mongodb.com/) as It's database.
 
 ## Installing
 Download with ![git](https://git-scm.com/).
 
-```$ git clone https://github.com/mrikea4real/pyAccountManagementSystem```
+```$ git clone https://github.com/mrikea4real/pyAMS```
 
-In the future you will be able to install pyAccountManagementSystem with ![pip](https://pip.pypa.io/en/stable/).
+In the future you will be able to install pyAMS with ![pip](https://pip.pypa.io/en/stable/).
 
 ## Examples
 _Login Ex_:
